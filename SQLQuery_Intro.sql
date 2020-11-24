@@ -1,0 +1,42 @@
+﻿--1.
+--SELECT *  FROM Genre
+--2.
+--SELECT * FROM Artist
+--ORDER BY ArtistName
+--3.
+--SELECT s.Title, a.ArtistName
+--FROM Song s
+--INNER JOIN Artist a ON s.ArtistId = a.id
+--4.
+--SELECT ArtistName, Genre.Label
+--FROM Artist
+--INNER JOIN Album ON Album.ArtistId = Artist.Id
+--INNER JOIN Genre ON Album.GenreId = Genre.Id
+--WHERE Genre.Label = 'Pop';
+--5.
+--SELECT ArtistName, Genre.Label
+--FROM Artist
+--INNER JOIN Album ON Album.ArtistId = Artist.Id
+--INNER JOIN Genre ON Album.GenreId = Genre.Id
+--WHERE Genre.Label = 'Jazz' OR Genre.Label = 'Rock'
+--6.
+--SELECT a.Title
+--FROM Album a 
+--LEFT JOIN Song s ON s.AlbumId = a.Id
+--WHERE a.Id IS NULL
+--7.
+--INSERT INTO Artist (ArtistName, YearEstablished) VALUES ('J.Cole', '2001');
+--8.
+--INSERT Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId) VALUES ('2014 Forrest Hills Drive', '2014', 2268, 'Roc Nation', 29, 6);
+--9.
+--INSERT INTO Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId) VALUES ('Love Yourz', 60, '2014', 6, 29, 30);
+--INSERT INTO Song (Title, SongLength, ReleaseDate, GenreId, ArtistId, AlbumId) VALUES ('G.O.M.D', 82, '2014', 6, 29, 30);
+--10.
+--SELECT a.Title, s.Title 
+--FROM Song s
+--LEFT JOIN Album a ON s.AlbumId = a.Id
+--LEFT JOIN Artist ar ON a.ArtistId = ar.Id
+--WHERE ArtistName = 'J.Cole';
+--11.
+
+
